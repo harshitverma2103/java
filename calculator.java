@@ -3,6 +3,7 @@ class Calculator {
         System.out.println("Tere bhai ka Calculator");
         System.out.println(sum(6, 5));
         System.out.println(subtract(6,5));
+        System.out.println(multiply(6,5));
     }
 
     public static int sum(int firstNumber, int secondNumber) {
@@ -11,5 +12,9 @@ class Calculator {
 
     public static int subtract(int firstNumber, int secondNumber) {
         return firstNumber - secondNumber;
+    }
+
+    public static int multiply(int firstNumber, int secondNumber) {
+        return firstNumber * secondNumber;
     }
 }
