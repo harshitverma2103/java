@@ -1,7 +1,7 @@
 public class FibonacciSeries {
     public static void main(String[] args) {
-        getFibonacciSeries(8);
-        printSeries(getFibonacciSeries(8));
+        getFibonacciSeries(13);
+        printSeries(getFibonacciSeries(13));
     }
 
     public static int[] getFibonacciSeries(int length) {
