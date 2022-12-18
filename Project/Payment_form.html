@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: rgb(82, 90, 81);
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-size: 16 px;
+            border-radius: 5px;
+        }
+
+        .btn {
+            background-color: darkcyan;
+            color: whitesmoke;
+            border: none;
+            border-radius: 9px;
+            text-align: center;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 15px 15px;
+            font-size: 17px;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #e0e0e0;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightgray;
+            border-radius: 4px;
+        }
+
+        input[type="text"] input[type="email"] input[type="number"] input[type="password"] input[type="date"] select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(78, 78, 78);
+        }
+
+        #main_heading {
+            text-align: center;
+            color: rgb(82, 90, 81);
+        }
+
+        div {
+            text-align: center;
+        }
+
+        .payment-logo {
+            display: block;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <hr>
+            <div>
+
+                <img src="https://seekvectorlogo.net/wp-content/uploads/2018/11/s-payment-vector-logo.png" width="150"
+                    alt="image not found" class="payment-logo">
+                <h1 id="main_heading">Payment Form</h1>
+            </div>
+            <hr>
+            <h2>User Information</h2>
+            <p>Name: <input type="text" name="name" placeholder="Prince Verma" class=".name" required></p>
+            <p>
+                gender:
+                male <input type="radio" name="gender" id="male" required>
+                female <input type="radio" name="gender" id="female" required>
+                other <input type="radio" name="gender" id="other" required>
+            </p>
+            <p>
+                Address: <textarea name="address" id="address" cols="100" rows="8" placeholder="Enter your address... "
+                    required></textarea>
+            </p>
+            <p>
+                Email: <input type="email" name="email" id="email" placeholder="vprince@012gmail.com" required>
+            </p>
+            <p>
+                Pincode:<input type="number" name="pincode" id="pincode" placeholder="445100" required>
+            </p>
+            <input type="reset" value="Reset Now" class="btn" />
+            <hr>
+            <h1>Payment Information</h1>
+            <p><img src="https://thecuriouspoint.com/wp-content/uploads/2020/09/Screenshot_2020-09-16-What-is-the-difference-between-RuPay-Card-VISA-Card-and-MasterCard-.png"
+                    width="180" alt="image not found" id="pic"> <br> <br>
+                Card Type:
+                <select name="card_type" id="card_type">
+                    <option value="">---select a card type---</option>
+                    <option value="visa">visa</option>
+                    <option value="mastercard">mastercard</option>
+                    <option value="rupay">rupay</option>
+                </select>
+            </p>
+            <p>
+                Card Number: <input type="number" name="cardnumber" id="cardnumber" placeholder="1111-2222-3333-4444"
+                    required>
+            </p>
+            <p>
+                Expiration Date: <input type="date" name="exp_date" id="exp_date" required>
+            </p>
+            <p> CVV: <input type="password" name="cvv_password" id="cvv_password" placeholder="123" required></p>
+            <input type="submit" value="Pay Now" class="btn">
+            <hr>
+            <div>
+                <footer>
+                    <a href="#">Home</a>
+                    <a href="#">Report</a>
+                    <a href="#">Help</a>
+                    <a href="#">Privacy policy</a>
+                    <a href="http//www.google.com">Contact Us</a>
+                </footer>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
